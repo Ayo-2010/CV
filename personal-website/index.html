@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jane Doe — CV</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="profile">
+          <img src="assets/avatar.svg" alt="Abdullah Abdulwahab" class="avatar" />
+          <div>
+            <h1>Abdullah Abdulwahab</h1>
+            <p class="subtitle">Web Developer</p>
+            <div class="actions">
+              <a class="btn" href="public/resume.pdf" download>Download CV</a>
+              <a class="btn ghost" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav" id="nav">
+      <div class="container">
+        <button id="nav-toggle" aria-expanded="false">☰</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container main">
+      <section id="about" class="hero">
+        <div class="intro">
+          <h2>About</h2>
+          <p>
+            I build accessible, high-performance web applications. I enjoy
+            designing clean APIs, mentoring engineers, and shipping polished
+            user experiences.
+          </p>
+          <p class="meta">Location: Remote • Open to full-time & freelance</p>
+          <div class="spacer">
+            <span class="pill">Available for hire</span>
+          </div>
+        </div>
+        <aside class="quick card">
+          <h3>Quick</h3>
+          <p class="meta">Email</p>
+          <p><a href="mailto:ayoabdullah13@gmail.com">ayoabdullah13@gmail.com</a></p>
+          <h3 class="spacer">Skills</h3>
+          <p class="meta">Primary</p>
+          <p>JavaScript, HTML, CSS, Node.js</p>
+        </aside>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <article class="job">
+          <h3>Senior Software Engineer — Acme Corp</h3>
+          <p class="meta">2021 — Present</p>
+          <ul>
+            <li>Led redesign of the core web app, improving performance and UX.</li>
+            <li>Mentored junior engineers and established testing best practices.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Software Engineer — Startup Inc.</h3>
+          <p class="meta">2018 — 2021</p>
+          <ul>
+            <li>Built customer-facing features and backend services in Node.js.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <p>B.S., Computer Science — University of Somewhere (2014)</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>JavaScript, TypeScript, React, Node.js, HTML, CSS, Testing, CI/CD</p>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <strong>"Great collaborator"</strong>
+            <p class="meta">— Manager at Acme Corp</p>
+            <p>Worked with Abdullah on multiple releases; reliable and thoughtful.</p>
+          </div>
+          <div class="testimonial">
+            <strong>"Delivered ahead of schedule"</strong>
+            <p class="meta">— Product Owner</p>
+            <p>Implemented features with strong attention to detail and testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certs">
+          <div class="cert">Responsive Web Design — FreeCodeCamp</div>
+          <div class="cert">JavaScript Algorithms — FreeCodeCamp</div>
+        </div>
+      </section>
+
+      <section id="availability">
+        <h2>Availability</h2>
+        <p>I am available for new work starting immediately. Open to remote positions and contract engagements.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <img src="assets/project-1.png" alt="Project 1" />
+            <h3>Open Source Library</h3>
+            <p>Utility library used by 1k+ projects. Implements X and Y.</p>
+          </article>
+          <article class="project">
+            <img src="assets/project-2.png" alt="Project 2" />
+            <h3>Personal Dashboard</h3>
+            <p>A small dashboard to monitor personal projects and tasks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, email me at <a href="mailto:ayoabdullah13@gmail.com">ayoabdullah13@gmail.com</a>.</p>
+        <form class="contact-form" action="mailto:ayoabdullah13@gmail.com" method="post" enctype="text/plain">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Abdullah Abdulwahab — <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
+      </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

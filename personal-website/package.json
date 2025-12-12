@@ -1,0 +1,14 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Single-page personal CV website",
+  "scripts": {
+    "dev": "npx serve -s . -l 5000",
+    "start": "npm run dev",
+    "preview": "npx serve . -l 5000"
+  },
+  "keywords": ["cv","resume","personal","website"],
+  "author": "Abdullah Abdulwahab",
+  "license": "MIT"
+}
