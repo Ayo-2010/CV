@@ -3,155 +3,347 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Jane Doe — CV</title>
+    <title>Abdullah Abdulwahab — Full-Stack Developer</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
       <div class="container">
-        <div class="profile">
-          <img src="assets/avatar.svg" alt="Abdullah Abdulwahab" class="avatar" />
-          <div>
-            <h1>Abdullah Abdulwahab</h1>
-            <p class="subtitle">Web Developer</p>
-            <div class="actions">
-              <a class="btn" href="public/resume.pdf" download>Download CV</a>
-              <a class="btn ghost" href="#contact">Contact</a>
+        <div class="nav-brand">
+          <a href="#" class="logo">AA</a>
+        </div>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav-cta">Get In Touch</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Hi, I'm Abdullah</h1>
+            <p class="hero-subtitle">Full-stack developer building high-performance web applications with clean code and thoughtful design</p>
+            <div class="hero-meta">
+              <span class="location">📍 Remote</span>
+              <span class="availability">🟢 Available for hire</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Start a Project</a>
+              <a class="btn btn-secondary" href="public/resume.pdf" download>Download CV</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="avatar-container">
+              <img src="assets/avatar.svg" alt="Abdullah Abdulwahab" class="avatar" />
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <nav class="nav" id="nav">
-      <div class="container">
-        <button id="nav-toggle" aria-expanded="false">☰</button>
-        <ul class="nav-list" id="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <main>
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>I'm a passionate full-stack developer with 5+ years of experience building scalable web applications. I specialize in modern JavaScript, Node.js, and React, with a focus on performance, accessibility, and user experience.</p>
+              <p>I believe great software comes from combining technical excellence with thoughtful design. I love mentoring engineers, contributing to open source, and staying on top of emerging technologies.</p>
+              <div class="about-highlights">
+                <div class="highlight">
+                  <h4>Quick Facts</h4>
+                  <ul>
+                    <li>5+ years professional experience</li>
+                    <li>Full-stack development</li>
+                    <li>Open source contributor</li>
+                    <li>Mentor & team lead</li>
+                  </ul>
+                </div>
+                <div class="highlight">
+                  <h4>Core Values</h4>
+                  <ul>
+                    <li>Code quality & testing</li>
+                    <li>User-centered design</li>
+                    <li>Performance & accessibility</li>
+                    <li>Continuous learning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="about-contact">
+              <div class="contact-card">
+                <h3>Get In Touch</h3>
+                <p class="label">Email</p>
+                <a href="mailto:ayoabdullah13@gmail.com" class="contact-link">ayoabdullah13@gmail.com</a>
+                
+                <p class="label" style="margin-top: 20px;">Connect</p>
+                <div class="social-links">
+                  <a href="#" class="social-icon">GitHub</a>
+                  <a href="#" class="social-icon">LinkedIn</a>
+                  <a href="#" class="social-icon">Twitter</a>
+                </div>
 
-    <main class="container main">
-      <section id="about" class="hero">
-        <div class="intro">
-          <h2>About</h2>
-          <p>
-            I build accessible, high-performance web applications. I enjoy
-            designing clean APIs, mentoring engineers, and shipping polished
-            user experiences.
-          </p>
-          <p class="meta">Location: Remote • Open to full-time & freelance</p>
-          <div class="spacer">
-            <span class="pill">Available for hire</span>
-          </div>
-        </div>
-        <aside class="quick card">
-          <h3>Quick</h3>
-          <p class="meta">Email</p>
-          <p><a href="mailto:ayoabdullah13@gmail.com">ayoabdullah13@gmail.com</a></p>
-          <h3 class="spacer">Skills</h3>
-          <p class="meta">Primary</p>
-          <p>JavaScript, HTML, CSS, Node.js</p>
-        </aside>
-      </section>
-
-      <section id="experience">
-        <h2>Experience</h2>
-        <article class="job">
-          <h3>Senior Software Engineer — Acme Corp</h3>
-          <p class="meta">2021 — Present</p>
-          <ul>
-            <li>Led redesign of the core web app, improving performance and UX.</li>
-            <li>Mentored junior engineers and established testing best practices.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <h3>Software Engineer — Startup Inc.</h3>
-          <p class="meta">2018 — 2021</p>
-          <ul>
-            <li>Built customer-facing features and backend services in Node.js.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <p>B.S., Computer Science — University of Somewhere (2014)</p>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>JavaScript, TypeScript, React, Node.js, HTML, CSS, Testing, CI/CD</p>
-      </section>
-
-      <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonials">
-          <div class="testimonial">
-            <strong>"Great collaborator"</strong>
-            <p class="meta">— Manager at Acme Corp</p>
-            <p>Worked with Abdullah on multiple releases; reliable and thoughtful.</p>
-          </div>
-          <div class="testimonial">
-            <strong>"Delivered ahead of schedule"</strong>
-            <p class="meta">— Product Owner</p>
-            <p>Implemented features with strong attention to detail and testing.</p>
+                <p class="label" style="margin-top: 20px;">Based in</p>
+                <p>Remote • Open to opportunities</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="certs">
-          <div class="cert">Responsive Web Design — FreeCodeCamp</div>
-          <div class="cert">JavaScript Algorithms — FreeCodeCamp</div>
+      <!-- Experience Section -->
+      <section id="experience" class="section experience-section">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="job-header">
+                  <h3>Senior Software Engineer</h3>
+                  <span class="job-company">Acme Corp</span>
+                </div>
+                <p class="job-period">2021 — Present</p>
+                <p class="job-description">Lead full-stack development of core platform. Architected performance improvements resulting in 40% faster load times.</p>
+                <ul class="job-achievements">
+                  <li>Led redesign of customer dashboard, improving UX and reducing bounce rate by 25%</li>
+                  <li>Mentored 3 junior engineers and established coding standards & testing practices</li>
+                  <li>Designed and implemented real-time notification system serving 100k+ daily users</li>
+                  <li>Reduced API response times by 50% through optimization and caching strategies</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="job-header">
+                  <h3>Full-Stack Developer</h3>
+                  <span class="job-company">Startup Inc.</span>
+                </div>
+                <p class="job-period">2018 — 2021</p>
+                <p class="job-description">Built and shipped customer-facing features and backend services. Scaled infrastructure to support 10x user growth.</p>
+                <ul class="job-achievements">
+                  <li>Developed core features for SaaS platform using React and Node.js</li>
+                  <li>Implemented CI/CD pipeline reducing deployment time from 45 min to 5 min</li>
+                  <li>Built REST APIs serving 50+ client integrations</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section id="availability">
-        <h2>Availability</h2>
-        <p>I am available for new work starting immediately. Open to remote positions and contract engagements.</p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <article class="project">
-            <img src="assets/project-1.png" alt="Project 1" />
-            <h3>Open Source Library</h3>
-            <p>Utility library used by 1k+ projects. Implements X and Y.</p>
-          </article>
-          <article class="project">
-            <img src="assets/project-2.png" alt="Project 2" />
-            <h3>Personal Dashboard</h3>
-            <p>A small dashboard to monitor personal projects and tasks.</p>
-          </article>
+      <!-- Skills Section -->
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Frontend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4 class="skill-category-title">Backend</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">GraphQL</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4 class="skill-category-title">Tools & DevOps</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Testing</span>
+                <span class="skill-tag">Performance</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to work together, email me at <a href="mailto:ayoabdullah13@gmail.com">ayoabdullah13@gmail.com</a>.</p>
-        <form class="contact-form" action="mailto:ayoabdullah13@gmail.com" method="post" enctype="text/plain">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <button class="btn" type="submit">Send</button>
-        </form>
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/project-1.png" alt="Open Source Library" />
+                <div class="project-overlay">
+                  <a href="#" class="project-link">View Project →</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Open Source Utility Library</h3>
+                <p>JavaScript utility library with 1000+ weekly downloads. Provides robust helpers for DOM manipulation and data transformations.</p>
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Open Source</span>
+                  <span class="tag">NPM</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/project-2.png" alt="Personal Dashboard" />
+                <div class="project-overlay">
+                  <a href="#" class="project-link">View Project →</a>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Project Analytics Dashboard</h3>
+                <p>Real-time dashboard for monitoring projects, tasks, and team metrics. Built with React and integrated with multiple data sources.</p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Real-time</span>
+                  <span class="tag">Analytics</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <div class="project-placeholder">Coming Soon</div>
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-featured e-commerce solution with payment processing, inventory management, and customer analytics dashboard.</p>
+                <div class="project-tags">
+                  <span class="tag">Full-Stack</span>
+                  <span class="tag">Stripe</span>
+                  <span class="tag">Scalable</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section testimonials-section">
+        <div class="container">
+          <h2 class="section-title">What Others Say</h2>
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Abdullah is an exceptional developer. He delivered our project ahead of schedule without compromising on quality. His attention to detail is remarkable."</p>
+              <div class="testimonial-author">
+                <h4>Sarah Johnson</h4>
+                <p>Product Manager, Acme Corp</p>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Great collaborator and mentor. Abdullah helped our team level up their skills and shipped several major features that exceeded expectations."</p>
+              <div class="testimonial-author">
+                <h4>Michael Chen</h4>
+                <p>Engineering Manager, Startup Inc.</p>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"One of the best developers I've worked with. His code is clean, well-tested, and his communication with stakeholders is excellent."</p>
+              <div class="testimonial-author">
+                <h4>Lisa Rodriguez</h4>
+                <p>CTO, Tech Startup</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-text">
+              <h2 class="section-title">Let's Work Together</h2>
+              <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out.</p>
+              <div class="contact-options">
+                <a href="mailto:ayoabdullah13@gmail.com" class="contact-option">
+                  <span class="contact-icon">✉</span>
+                  <div>
+                    <p class="contact-label">Email</p>
+                    <p>ayoabdullah13@gmail.com</p>
+                  </div>
+                </a>
+                <a href="#" class="contact-option">
+                  <span class="contact-icon">💬</span>
+                  <div>
+                    <p class="contact-label">LinkedIn</p>
+                    <p>Connect with me</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form" action="mailto:ayoabdullah13@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> Abdullah Abdulwahab — <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
+        <div class="footer-content">
+          <div>
+            <p>© <span id="year"></span> Abdullah Abdulwahab. All rights reserved.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
       </div>
     </footer>
 
